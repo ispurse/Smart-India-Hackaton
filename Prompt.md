@@ -23,6 +23,21 @@ SIH26113 — Maternity Assist Belt
 
 I have provided an image showing the intended PCB architecture. Treat that architecture image as the starting point, but DO NOT blindly assume that every component, pinout, package, electrical characteristic, or connection shown in the image is technically correct.
 
+REFERENCE ARCHITECTURE TRANSCRIPTION
+
+Use the supplied image as the visual reference for this prototype carrier-board architecture:
+
+- POWER ENTRY: Li-Po 3.7 V battery -> JST -> TP4056 protected charging module; MAX17048 fuel gauge; 3.3 V regulation.
+- ESP32-S3 CENTRAL MCU: BLE/Wi-Fi, shared I2C for TMP117, LSM6DSOX, AS5600 and MAX17048; ADC inputs for ECG, FSR, piezo and stretch sensing; GPIO for HX711, SOS and alerts.
+- ECG: three electrodes -> AD8232 -> ESP32 ADC; LO+/LO- are optional lead-off inputs; keep the analog path short and quiet.
+- MOTION / ANGLE: LSM6DSOX and AS5600 on I2C; optional INT1/INT2 GPIO; one AS5600 per side only if the mechanical design requires it.
+- MECHANICAL SENSING: load cell -> HX711 -> ESP32; four FSRs through resistor dividers to ADC; stretch sensor through signal conditioning; piezo and limit/Hall sensor inputs.
+- FET-DRIVEN ALERTS: GPIO -> MOSFET -> vibration motor and GPIO -> MOSFET -> buzzer; LED plus resistor; add a flyback diode across the motor.
+- USER INPUT / STORAGE: SOS pushbutton with GPIO pull-up; optional microSD over SPI; status/RGB LED; firmware debounce and fault handling.
+- I2C BUS: shared SDA/SCL carrying TMP117, LSM6DSOX, AS5600 and MAX17048. Resolve address conflicts and verify pull-up voltage before finalizing the schematic.
+
+The diagram is a functional block architecture, not a verified schematic. Confirm every vendor pinout, module boundary, voltage domain, address, protection component, connector pinout and footprint against primary documentation before producing fabrication files.
+
 Your job is to turn this architecture into a professional, manufacturable prototype PCB design workflow for Autodesk Fusion Electronics / EAGLE-compatible files.
 
 IMPORTANT:
