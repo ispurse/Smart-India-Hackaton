@@ -1,0 +1,76 @@
+Reference,Qty,Value,Manufacturer,MPN,Description,Package,Supplier,Supplier PN,Lifecycle,Library device,Notes
+C1 C2 C3 C4 C28 C37 C38,7,10u,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,VBUS input bulk
+C10 C15 C24,3,1u,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,EN RC delay (power-on reset)
+C17,1,1n,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,RLD integrator (RLDFB to RLD)
+C18 C19,2,220n,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,HPF pole 1 cap (HPDRIVE to HPSENSE)
+C20,1,8n2,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,LPF input cap -> ~41 Hz pole
+C21,1,3n9,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,Feedback cap -> ~41 Hz pole (2nd LPF pole)
+C22 C29 C30 C31 C32 C33 C35,7,10n,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,ADC input reservoir
+C34,1,100n/50V,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,Piezo AC coupling (must withstand the film's open-circuit transient)
+C5 C6 C7 C11 C12 C13 C14 C16 C23 C25 C26 C27 C36 C39,14,100n,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,LDO output HF bypass
+C8,1,22u,,,"Chip capacitor, 0805 (2012 metric)",C0805,,,,C-0805,ESP32 3V3 bulk (Wi-Fi TX current burst)
+D1 D4,2,RED,,,"Chip LED, 0805",LED0805,,,,LED-0805,Charging indicator
+D2 D3,2,GRN,,,"Chip LED, 0805",LED0805,,,,LED-0805,Charge-complete indicator
+D5 D6 D7 D8,4,1N5819HW,generic (Diodes/onsemi/MDD),1N5819HW,"Schottky/rectifier diode, SOD-123",SOD-123,,,,DIODE-SOD123,Piezo over-voltage clamp to 3V3
+H1 H2 H3 H4,4,M2,,,"M2 plated mounting hole, GND-stitched",MOUNT-M2,,,,MOUNTHOLE-M2,"M2 mounting hole, GND-stitched"
+J1,1,LI-PO 3.7V,JST,S2B-PH-K-S,JST PH 2,JST-PH-2,,,,JST-PH-2,Li-Po cell input (protected pack required)
+J10,1,FSR2,-,FSR402 + 1x2 header,1x2 2,HDR-1X2,,,,HDR-1X2,Force-sensing resistor 2 (belt pressure)
+J11,1,FSR3,-,FSR402 + 1x2 header,1x2 2,HDR-1X2,,,,HDR-1X2,Force-sensing resistor 3 (belt pressure)
+J12,1,FSR4,-,FSR402 + 1x2 header,1x2 2,HDR-1X2,,,,HDR-1X2,Force-sensing resistor 4 (belt pressure)
+J13,1,STRETCH,-,TBD - see REQUIRES_CONFIRMATION.md,1x2 2,HDR-1X2,,,,HDR-1X2,Abdominal stretch / extension sensor
+J14,1,PIEZO,-,piezo film + 1x2 header,1x2 2,HDR-1X2,,,,HDR-1X2,Piezo film fetal-movement sensor
+J15,1,HALL / LIMIT,-,generic 1x3 2.54mm header,1x3 2,HDR-1X3,,,,HDR-1X3,Hall or mechanical limit switch (rail travel)
+J16,1,VIB MOTOR,-,generic 1x2 2.54mm header,1x2 2,HDR-1X2,,,,HDR-1X2,Vibration motor output
+J17,1,BUZZER,-,generic 1x2 2.54mm header,1x2 2,HDR-1X2,,,,HDR-1X2,Magnetic or piezo buzzer output
+J18,1,MICROSD SPI,-,generic microSD SPI breakout + 1x6 header,1x6 2,HDR-1X6,,,,HDR-1X6,microSD breakout module (SPI)
+J2,1,USB / 5V IN,-,generic 1x4 2.54mm header,1x4 2,HDR-1X4,,,,HDR-1X4,5 V charge input + ESP32-S3 native USB D+/D-
+J3,1,OFF SW,-,generic 1x2 2.54mm header,1x2 2,HDR-1X2,,,,HDR-1X2,External latching switch: closed = board OFF
+J4,1,FUEL GAUGE,-,generic 1x5 2.54mm header,1x5 2,HDR-1X5,,,,HDR-1X5,"MAX17048 breakout header (I2C, addr 0x36)"
+J5,1,UART PROG,-,generic 1x6 2.54mm header,1x6 2,HDR-1X6,,,,HDR-1X6,Fallback UART programming header
+J6,1,AS5600 SIDE-B,-,generic 1x5 2.54mm header,1x5 2,HDR-1X5,,,,HDR-1X5,Second AS5600 (angle bus B + analog OUT)
+J7,1,ECG ELECTRODES,-,generic 1x3 2.54mm header,1x3 2,HDR-1X3,,,,HDR-1X3,LA / RA / RL electrode leads
+J8,1,LOAD CELL,JST,S4B-PH-K-S,JST PH 2,JST-PH-4,,,,JST-PH-4,"4-wire bridge: E+, E-, A+, A-"
+J9,1,FSR1,-,FSR402 + 1x2 header,1x2 2,HDR-1X2,,,,HDR-1X2,Force-sensing resistor 1 (belt pressure)
+Q1 Q2,2,AO3400A,Alpha & Omega Semiconductor,AO3400A,"N-channel logic-level MOSFET, SOT-23-3",SOT-23-3,,,,NMOS-SOT23,Low-side switch for the vibration motor
+R1,1,2k4,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,TP4056 PROG: sets 500 mA charge current
+R11 R12 R15 R16,4,4k7,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,I2C_SDA pull-up (bus A)
+R17,1,0R DNP,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,Opt-in link: side-B AS5600 analog OUT -> IO3. Leave unpopulated unless the analog path is used (IO3 is a strapping pin).
+R18 R19 R20,3,330k,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,LA patient-protection series R (Vs/10uA)
+R2 R3 R9 R10 R30 R49,6,1k,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,CHRG LED current limit
+R21 R22 R23 R24 R25 R38,6,10M,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,LA DC leads-off bias pull-up
+R26 R29 R39 R40,4,1M,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,HPF pole 2 resistor (SW to REFOUT) -> 0.72 Hz
+R4 R28 R31 R32 R41 R44 R47,7,100k,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,LDO EN pull-up to VBAT
+R43 R46,2,100R,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,Motor gate series resistor (slew limit)
+R45,1,0R,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,Motor ballast: populate only if the chosen motor is rated below 4.2 V
+R5 R6 R27,3,470k,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,"VBAT sense divider, upper"
+R7 R8 R13 R33 R34 R35 R36 R37 R42 R48 R50 R51,12,10k,,,"Chip resistor, 0805 (2012 metric)",R0805,,,,R-0805,EN pull-up
+SW2,1,RESET,-,TL1105 family,6 x 6 mm through-hole tactile push-button,TACT-6X6-THT,,,,SW-TACT-6MM,Reset button (pulls EN low)
+SW3,1,BOOT,-,TL1105 family,6 x 6 mm through-hole tactile push-button,TACT-6X6-THT,,,,SW-TACT-6MM,Boot button (pulls IO0 low)
+SW4,1,SOS,-,TL1105 family,6 x 6 mm through-hole tactile push-button,TACT-6X6-THT,,,,SW-TACT-6MM,Manual emergency SOS button
+TP1,1,VBAT,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: VBAT
+TP10,1,ECG_OUT,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: conditioned ECG output
+TP11,1,ECG_REF,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: AD8232 REFOUT virtual ground
+TP12,1,HX_BASE,,,1,TESTPOINT-1.5,,,,TESTPOINT,HX711 BASE (regulator unused: NC)
+TP13,1,HX_XO,,,1,TESTPOINT-1.5,,,,TESTPOINT,HX711 XO (crystal unused: NC)
+TP14,1,HX_DOUT,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: HX711 serial data out
+TP15,1,MOTOR_EN,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: MOTOR_EN gate drive
+TP16,1,BUZZER_EN,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: BUZZER_EN gate drive
+TP17,1,SOS_GPIO,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: SOS GPIO
+TP18,1,I2C_SDA,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: sensor-bus SDA
+TP19,1,I2C_SCL,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: sensor-bus SCL
+TP2,1,3V3,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: 3V3
+TP3,1,GND,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: GND
+TP4,1,VBUS,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: VBUS
+TP5,1,IO3,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: IO3 spare / ANG2_OUT
+TP6,1,TMP_ALERT,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: TMP117 ALERT (not routed to a GPIO)
+TP7,1,IMU_INT1,,,1,TESTPOINT-1.5,,,,TESTPOINT,Test point: IMU interrupt 1
+TP8,1,AS_OUT,,,1,TESTPOINT-1.5,,,,TESTPOINT,"AS5600 analog/PWM OUT (unused, I2C is used)"
+TP9,1,AS_PGO,,,1,TESTPOINT-1.5,,,,TESTPOINT,AS5600 PGO programming pin (internal pull-up)
+U1,1,TP4056,NanJing Top Power,TP4056-42-SOP8-PP,"NanJing Top Power TP4056-42-SOP8-PP 1 A standalone linear Li-ion charger, 4",SOIC-8-N,,,,TP4056,"1 A linear Li-ion charger, 4.2 V float"
+U2,1,AP2112K-3.3,,,Diodes AP2112K-3,SOT-23-5,,,,AP2112K-3.3,"600 mA LDO, 3.3 V fixed"
+U3,1,ESP32-S3-WROOM-1-N8R2,Espressif Systems,ESP32-S3-WROOM-1-N8R2,Espressif ESP32-S3-WROOM-1-N8R2,ESP32-S3-WROOM-1,,,,ESP32-S3-WROOM-1,"Central MCU: Xtensa LX7 dual core, Wi-Fi + BLE 5, 8 MB flash, 2 MB PSRAM"
+U4,1,TMP117,Texas Instruments,TMP117AIDRVR,"TI TMP117AIDRVR high-accuracy digital temperature sensor, WSON-6 (DRV)",WSON-6-DRV0006B,,,,TMP117,"Digital temperature sensor, I2C addr 0x48"
+U5,1,LSM6DSOX,STMicroelectronics,LSM6DSOXTR,"ST LSM6DSOXTR 6-axis IMU (3-axis accel + 3-axis gyro), LGA-14L",LGA-14L-2.5X3.0,,,,LSM6DSOX,"6-axis IMU, I2C addr 0x6A"
+U6,1,AS5600,ams-OSRAM,AS5600-ASOM,"ams-OSRAM AS5600-ASOM 12-bit contactless magnetic rotary position sensor, SOIC-8",SOIC-8-N,,,,AS5600,"12-bit magnetic angle sensor, I2C addr 0x36 (fixed)"
+U7,1,AD8232,Analog Devices,AD8232ACPZ-R7,Analog Devices AD8232ACPZ-R7 single-lead heart-rate monitor front end,LFCSP-20-4X4-P050,,,,AD8232,Single-lead ECG analog front end (Vs 2.0-3.5 V)
+U8,1,HX711,Avia Semiconductor,HX711,"Avia Semiconductor HX711 24-bit ADC for bridge sensors, SOP-16L",SOP-16-N,,,,HX711,24-bit bridge ADC for the load cell

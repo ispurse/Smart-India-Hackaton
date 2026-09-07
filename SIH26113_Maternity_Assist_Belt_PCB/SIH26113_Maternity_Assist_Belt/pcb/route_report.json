@@ -1,0 +1,349 @@
+{
+  "seed": 8,
+  "geometric_repairs": [
+    {
+      "pair": [
+        "FSR1_ADC",
+        "I2C_SCL"
+      ],
+      "gap": 0.075,
+      "action": "re-routed I2C_SCL (strict clearance)"
+    },
+    {
+      "pair": [
+        "LED_ALERT",
+        "SD_CS"
+      ],
+      "gap": 0.09,
+      "action": "re-routed LED_ALERT (normal clearance)"
+    },
+    {
+      "pair": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "gap": 0.1,
+      "action": "re-routed ECG_RA_F (normal clearance)"
+    },
+    {
+      "pair": [
+        "ECG_LOD_N",
+        "SD_MISO"
+      ],
+      "gap": 0.115,
+      "action": "re-routed ECG_LOD_N (strict clearance)"
+    },
+    {
+      "pair": [
+        "BUZZER_EN",
+        "HX_DOUT"
+      ],
+      "gap": 0.125,
+      "action": "re-routed BUZZER_EN (strict clearance)"
+    },
+    {
+      "pair": [
+        "FSR2_ADC",
+        "I2C_SDA"
+      ],
+      "gap": 0.125,
+      "action": "re-routed FSR2_ADC (normal clearance)"
+    },
+    {
+      "pair": [
+        "HALL_LIMIT",
+        "3V3"
+      ],
+      "gap": 0.13,
+      "action": "re-routed HALL_LIMIT (strict clearance)"
+    },
+    {
+      "pair": [
+        "PIEZO_ADC",
+        "ESP_EN"
+      ],
+      "gap": 0.145,
+      "action": "re-routed PIEZO_ADC (normal clearance)"
+    },
+    {
+      "pair": [
+        "SD_CS",
+        "LED_ALERT"
+      ],
+      "gap": 0.0,
+      "action": "re-routed LED_ALERT (normal clearance)"
+    },
+    {
+      "pair": [
+        "FSR1_ADC",
+        "I2C_SDA"
+      ],
+      "gap": 0.075,
+      "action": "re-routed FSR1_ADC (normal clearance)"
+    },
+    {
+      "pair": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "gap": 0.1,
+      "action": "re-routed ECG_RA_F (normal clearance)"
+    },
+    {
+      "pair": [
+        "ECG_LOD_N",
+        "SD_MISO"
+      ],
+      "gap": 0.115,
+      "action": "re-routed ECG_LOD_N (strict clearance)"
+    },
+    {
+      "pair": [
+        "BUZZER_EN",
+        "HX_DOUT"
+      ],
+      "gap": 0.125,
+      "action": "re-routed BUZZER_EN (strict clearance)"
+    },
+    {
+      "pair": [
+        "PIEZO_ADC",
+        "ESP_EN"
+      ],
+      "gap": 0.145,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "SD_CS",
+        "LED_ALERT"
+      ],
+      "gap": 0.0,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "FSR1_ADC",
+        "I2C_SDA"
+      ],
+      "gap": 0.075,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "gap": 0.1,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "ECG_LOD_N",
+        "SD_MISO"
+      ],
+      "gap": 0.115,
+      "action": "re-routed SD_MISO (normal clearance)"
+    },
+    {
+      "pair": [
+        "BUZZER_EN",
+        "HX_DOUT"
+      ],
+      "gap": 0.125,
+      "action": "re-routed BUZZER_EN (strict clearance)"
+    },
+    {
+      "pair": [
+        "PIEZO_ADC",
+        "ESP_EN"
+      ],
+      "gap": 0.145,
+      "action": "re-routed PIEZO_ADC (strict clearance)"
+    },
+    {
+      "pair": [
+        "HX_DOUT",
+        "PIEZO_ADC"
+      ],
+      "gap": -0.0,
+      "action": "re-routed HX_DOUT (normal clearance)"
+    },
+    {
+      "pair": [
+        "SD_CS",
+        "LED_ALERT"
+      ],
+      "gap": 0.0,
+      "action": "re-routed SD_CS (normal clearance)"
+    },
+    {
+      "pair": [
+        "FSR1_ADC",
+        "I2C_SDA"
+      ],
+      "gap": 0.075,
+      "action": "re-routed FSR1_ADC (normal clearance)"
+    },
+    {
+      "pair": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "gap": 0.1,
+      "action": "re-routed ECG_RA_F (normal clearance)"
+    },
+    {
+      "pair": [
+        "ESP_EN",
+        "SD_MISO"
+      ],
+      "gap": 0.145,
+      "action": "re-routed SD_MISO (normal clearance)"
+    },
+    {
+      "pair": [
+        "FSR1_ADC",
+        "I2C_SDA"
+      ],
+      "gap": 0.075,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "LED_ALERT",
+        "SD_CS"
+      ],
+      "gap": 0.09,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "gap": 0.1,
+      "action": "no alternative path found"
+    },
+    {
+      "pair": [
+        "ESP_EN",
+        "SD_MISO"
+      ],
+      "gap": 0.145,
+      "action": "no alternative path found"
+    }
+  ],
+  "conceded_for_clearance": [
+    {
+      "net": "I2C_SDA",
+      "conflicted_with": "FSR1_ADC",
+      "gap_mm": 0.075,
+      "layer": 1
+    },
+    {
+      "net": "SD_CS",
+      "conflicted_with": "LED_ALERT",
+      "gap_mm": 0.09,
+      "layer": 1
+    },
+    {
+      "net": "SD_MISO",
+      "conflicted_with": "ESP_EN",
+      "gap_mm": 0.145,
+      "layer": 1
+    },
+    {
+      "net": "ESP_EN",
+      "conflicted_with": "PIEZO_ADC",
+      "gap_mm": 0.145,
+      "layer": 1
+    }
+  ],
+  "residual_violations": [
+    {
+      "gap_mm": 0.1,
+      "nets": [
+        "ECG_RA_F",
+        "GND"
+      ],
+      "layer": 1
+    },
+    {
+      "gap_mm": 0.1,
+      "nets": [
+        "ECG_SDN",
+        "GND"
+      ],
+      "layer": 1
+    },
+    {
+      "gap_mm": 0.1,
+      "nets": [
+        "ECG_REFIN",
+        "GND"
+      ],
+      "layer": 1
+    },
+    {
+      "gap_mm": 0.1,
+      "nets": [
+        "ECG_REFOUT",
+        "GND"
+      ],
+      "layer": 1
+    }
+  ],
+  "residual_violation_count": 4,
+  "ripup_attempts": 1,
+  "routed": 76,
+  "total_signal_nets": 80,
+  "failed": [
+    [
+      "I2C_SDA",
+      "left unrouted on purpose: every path the router found came within 0.075 mm of FSR1_ADC on layer 1, below the 0.15 mm rule. Route it by hand in Fusion."
+    ],
+    [
+      "SD_CS",
+      "left unrouted on purpose: every path the router found came within 0.090 mm of LED_ALERT on layer 1, below the 0.15 mm rule. Route it by hand in Fusion."
+    ],
+    [
+      "SD_MISO",
+      "left unrouted on purpose: every path the router found came within 0.145 mm of ESP_EN on layer 1, below the 0.15 mm rule. Route it by hand in Fusion."
+    ],
+    [
+      "ESP_EN",
+      "left unrouted on purpose: every path the router found came within 0.145 mm of PIEZO_ADC on layer 1, below the 0.15 mm rule. Route it by hand in Fusion."
+    ]
+  ],
+  "thermal_vias": 15,
+  "escapes": 45,
+  "radial_stubs": 49,
+  "escapes_blocked": 11,
+  "radial_stubs_blocked": 7,
+  "plane_vias": 160,
+  "orphan_plane_pads": [],
+  "ecg_nets_needing_bottom_layer": [
+    "ECG_IAOUT",
+    "ECG_OPP",
+    "ECG_LA_F",
+    "ECG_SW",
+    "ECG_RA",
+    "ECG_OUT_RAW",
+    "ECG_REFIN",
+    "ECG_RL",
+    "ECG_OPM",
+    "ECG_LA"
+  ],
+  "route_seconds": 80.2,
+  "attempts_tried": 14,
+  "wires": 4523,
+  "vias": 486,
+  "polygons": 2,
+  "contactrefs": 409,
+  "elements": 150,
+  "signals": 84,
+  "board_w": 100.0,
+  "board_h": 70.0,
+  "layers": 4
+}

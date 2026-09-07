@@ -1,0 +1,52 @@
+{
+  "errors": [
+    "[D6] net I2C_SDA is not fully routed: left unrouted on purpose: every path the router found came within 0.075 mm of FSR1_ADC on layer 1, below the 0.15 mm rule. Route it by hand in Fusion.",
+    "[D6] net SD_CS is not fully routed: left unrouted on purpose: every path the router found came within 0.090 mm of LED_ALERT on layer 1, below the 0.15 mm rule. Route it by hand in Fusion.",
+    "[D6] net SD_MISO is not fully routed: left unrouted on purpose: every path the router found came within 0.145 mm of ESP_EN on layer 1, below the 0.15 mm rule. Route it by hand in Fusion.",
+    "[D6] net ESP_EN is not fully routed: left unrouted on purpose: every path the router found came within 0.145 mm of PIEZO_ADC on layer 1, below the 0.15 mm rule. Route it by hand in Fusion."
+  ],
+  "warnings": [
+    "[D6] net VBUS: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net LED_STDBY_K: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net VBAT_SENSE: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ESP_IO0: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net UART_RX: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net USB_DP: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net I2C_SCL: track copper forms 5 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net IMU_INT1: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net IMU_INT2: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ANG_SDA: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ANG_SCL: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_RA_F: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_RLD: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_REFIN: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_REFOUT: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_HPSENSE: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_HPDRIVE: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_SW: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_OUT_RAW: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_OUT: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_SDN: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_FR: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net ECG_LOD_N: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net LC_A_P: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net HX_VBG: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net HX_XO: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net HX_DOUT: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net PIEZO_ADC: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net BUZZER_EN: track copper forms 3 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net SOS_BTN: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net SOS_GPIO: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion.",
+    "[D6] net SD_MOSI: track copper forms 2 groups. This is normal - a multi-drop net reaches each pad separately and the pads join them - and is reported only so a genuinely stranded stub cannot hide among them. Confirm with RATSNEST in Fusion."
+  ],
+  "notes": [
+    "[D5] layer 1: SD_MOSI track to pad J12.1 at 0.130 mm - inside a declared fine-pitch fan-out region (0.127 mm rule)",
+    "[D5] layer 16: HX_DOUT track to pad J11.1 at 0.130 mm - inside a declared fine-pitch fan-out region (0.127 mm rule)",
+    "[D5] minimum wire-pad clearance on layer 1: 0.130 mm",
+    "[D5] minimum wire-pad clearance on layer 16: 0.130 mm",
+    "[D5] minimum wire-wire clearance on layer 1: 0.154 mm",
+    "[D5] minimum wire-wire clearance on layer 16: 0.175 mm",
+    "[D5] MEASURED MINIMUM COPPER CLEARANCE ANYWHERE ON THE BOARD: 0.130 mm. This is the number to quote to the fabricator.",
+    "[D6] router completed 76 of 80 signal nets"
+  ]
+}
